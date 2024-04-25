@@ -1,0 +1,24 @@
+class vehicle:
+  #This is the constructor methid, needed to initialize the attributes of each object
+  def__init__(self, speed, nav_system, propulsion, weight, distance):
+    self.speed = speed #This is not an attribute of class vehicle
+    self.nav_system = nav_system
+    self.propulsion = propulsion
+    self.weight = weight
+    self.distance = distance
+class Car:
+  def __init__(self, make, model, year):
+    self.make=make
+    self.model=model
+    self.year=year
+    self.utility = 'HUV'
+
+  def accelerate(self):
+    print('The car accelerates. ')
+
+  def decelerate(self):
+    print(f'The (self.make) decelerates. ')
+c = Car('Ford', 150, 2023)
+d = Car('Chrysler', 300, 2020)
+c.accelerate()
+c.make
